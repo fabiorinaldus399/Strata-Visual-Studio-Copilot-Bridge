@@ -149,8 +149,6 @@ calls).
 | --- | --- |
 | `test_bridge_sse.py` | offline unit test of the SSE re-encoder, no network: `python test_bridge_sse.py` |
 | `vs_turn_verdict.py` | reads VS's chat logs and reports, per session, whether each agent turn was released or left stuck: `python vs_turn_verdict.py` |
-| `cli_byok_test.ps1` | runs the **same** Copilot CLI that VS drives (`Common7\IDE\CopilotCli\copilot.exe`) against the bridge, outside VS, and reports the exit code |
-| `agent_here.ps1` | starts an interactive Copilot CLI agent on Strata, usable from VS's Tools → Terminal |
 
 The Copilot CLI has its own BYOK mode, which makes it possible to exercise the
 exact same agent harness without Visual Studio in the loop:
