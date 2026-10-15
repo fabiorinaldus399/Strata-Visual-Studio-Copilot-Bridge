@@ -165,8 +165,7 @@ $env:COPILOT_MODEL             = "qwen3.8-flash-next-iq3_s"
 
 ## Known issue: Visual Studio never releases the turn
 
-**Requires Copilot chat 18.11.1011 or later.** Older builds — 18.10.1203, the one
-shipped with Visual Studio 18.10 — can finish an Agent-mode turn, render the
+**Requires Copilot chat 18.11.1011 or later.** Older builds — for example 18.10.1203 — can finish an Agent-mode turn, render the
 answer, and still leave the **Stop** button active. Their log shows
 `session.idle` delivered and then `CLI event delivery fence was not observed`,
 meaning Visual Studio never closes its own CLI event channel; nothing on the
